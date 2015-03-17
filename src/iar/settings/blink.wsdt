@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>blink/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>150</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+    <Build><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>723</ColumnWidth1><ColumnWidth2>483</ColumnWidth2><ColumnWidth3>48</ColumnWidth3></Build><Find-in-Files><ColumnWidth0>628</ColumnWidth0><ColumnWidth1>66</ColumnWidth1><ColumnWidth2>796</ColumnWidth2></Find-in-Files><Debug-Log><ColumnWidth0>26</ColumnWidth0><ColumnWidth1>1301</ColumnWidth1></Debug-Log><TerminalIO/></Static>
+    <Windows>
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-12491-15922</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>blink</ExpandedNode><ExpandedNode>blink/CMSIS</ExpandedNode><ExpandedNode>blink/Drivers</ExpandedNode><ExpandedNode>blink/Source</ExpandedNode><ExpandedNode>blink/emlib</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3><Tabs><Tab><Identity>TabID-5215-19743</Identity><TabName>Build</TabName><Factory>Build</Factory><Session/></Tab><Tab><Identity>TabID-6838-7232</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab><Tab><Identity>TabID-6462-9900</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\main.c</Filename><XPos>0</XPos><YPos>51</YPos><SelStart>2637</SelStart><SelEnd>2637</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\menuAlt.c</Filename><XPos>0</XPos><YPos>66</YPos><SelStart>1309</SelStart><SelEnd>1309</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\menuAlt.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>210</SelStart><SelEnd>210</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\PID.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>344</SelStart><SelEnd>344</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\PID.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>187</SelStart><SelEnd>199</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\timer.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>21</SelStart><SelEnd>21</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\timer.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>78</SelStart><SelEnd>96</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\drivers\segmentlcd.c</Filename><XPos>0</XPos><YPos>105</YPos><SelStart>3720</SelStart><SelEnd>3737</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\drivers\segmentlcd.h</Filename><XPos>0</XPos><YPos>66</YPos><SelStart>2627</SelStart><SelEnd>2662</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\emlib\inc\em_lcd.h</Filename><XPos>0</XPos><YPos>401</YPos><SelStart>18786</SelStart><SelEnd>18789</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\emlib\src\em_lcd.c</Filename><XPos>0</XPos><YPos>270</YPos><SelStart>9988</SelStart><SelEnd>9994</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\readTemp.c</Filename><XPos>0</XPos><YPos>15</YPos><SelStart>1216</SelStart><SelEnd>1216</SelEnd></Tab><ActiveTab>11</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\emlib\inc\em_adc.h</Filename><XPos>0</XPos><YPos>393</YPos><SelStart>15880</SelStart><SelEnd>15897</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\Device\EnergyMicro\EFM32TG\Include\efm32tg840f32.h</Filename><XPos>0</XPos><YPos>296</YPos><SelStart>15917</SelStart><SelEnd>15928</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\Device\EnergyMicro\EFM32TG\Include\efm32tg_adc.h</Filename><XPos>0</XPos><YPos>155</YPos><SelStart>17915</SelStart><SelEnd>17934</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-027aea40><key>iaridepm.enu1</key></Toolbar-027aea40></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>763</Bottom><Right>241</Right><x>-2</x><y>-2</y><xscreen>420</xscreen><yscreen>144</yscreen><sizeHorzCX>218750</sizeHorzCX><sizeHorzCY>144289</sizeHorzCY><sizeVertCX>126563</sizeVertCX><sizeVertCY>766533</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>190</Bottom><Right>1922</Right><x>-2</x><y>-2</y><xscreen>1924</xscreen><yscreen>192</yscreen><sizeHorzCX>1002083</sizeHorzCX><sizeHorzCY>192385</sizeHorzCY><sizeVertCX>218750</sizeVertCX><sizeVertCY>144289</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

@@ -1,0 +1,167 @@
+####################################################################
+# Makefile                                                         #
+####################################################################
+
+.SUFFIXES:				# ignore builtin rules
+.PHONY: all debug release clean
+
+####################################################################
+# Definitions                                                      #
+####################################################################
+
+DEVICE = EFM32TG840F32
+PROJECTNAME = blink
+
+OBJ_DIR = build
+EXE_DIR = exe
+LST_DIR = lst
+
+####################################################################
+# Definitions of toolchain.                                        #
+# You might need to do changes to match your system setup          #
+####################################################################
+
+# Change path to CodeSourcery tools according to your system configuration
+WINDOWSCS = CodeSourcery/Sourcery G++ Lite
+LINUXCS   = /cad/codesourcery/arm-none-eabi/arm-2010q1
+GCCVERSION = $(shell $(CC) -dumpversion)
+
+ifeq ($(ComSpec),)
+  ifeq ($(COMSPEC),)
+    # Assume we are making on a linux platform
+    TOOLDIR = $(LINUXCS)
+    RM = rm -rf
+  else
+    TOOLDIR = $(PROGRAMFILES)/$(WINDOWSCS)
+    RM = "$(TOOLDIR)/bin/cs-rm" -rf
+    QUOTE ="
+  endif
+else
+  TOOLDIR = $(ProgramFiles)/$(WINDOWSCS)
+  RM = "$(TOOLDIR)/bin/cs-rm" -rf
+  QUOTE ="
+endif
+
+CC      = $(QUOTE)$(TOOLDIR)/bin/arm-none-eabi-gcc$(QUOTE)
+LD      = $(QUOTE)$(TOOLDIR)/bin/arm-none-eabi-ld$(QUOTE)
+AR      = $(QUOTE)$(TOOLDIR)/bin/arm-none-eabi-ar$(QUOTE)
+OBJCOPY = $(QUOTE)$(TOOLDIR)/bin/arm-none-eabi-objcopy$(QUOTE)
+DUMP    = $(QUOTE)$(TOOLDIR)/bin/arm-none-eabi-objdump$(QUOTE) --disassemble
+
+####################################################################
+# Flags                                                            #
+####################################################################
+
+# -MMD : Don't generate dependencies on system header files.
+# -MP  : Add phony targets, useful when a h-file is removed from a project.
+# -MF  : Specify a file to write the dependencies to.
+DEPFLAGS = -MMD -MP -MF $(@:.o=.d)
+
+# Add -Wa,-ahld=$(LST_DIR)/$(@F:.o=.lst) to CFLAGS to produce assembly list files
+CFLAGS += -D$(DEVICE) -mcpu=cortex-m3 -mthumb -ffunction-sections -fdata-sections \
+-mfix-cortex-m3-ldrd -fomit-frame-pointer -Wall -DDEBUG_EFM  $(DEPFLAGS)
+
+ASMFLAGS += -x assembler-with-cpp
+
+LDFLAGS += -Xlinker -Map=$(LST_DIR)/$(PROJECTNAME).map -mcpu=cortex-m3 -mthumb \
+-T../../../../../Device/EnergyMicro/EFM32TG/Source/G++/efm32tg.ld \
+-L"$(TOOLDIR)/arm-none-eabi/lib/thumb2" \
+-L"$(TOOLDIR)/lib/gcc/arm-none-eabi/$(GCCVERSION)/thumb2" \
+-Wl,--gc-sections
+
+LIBS = -Wl,--start-group -lgcc -lc -lcs3 -lcs3unhosted -Wl,--end-group
+
+INCLUDEPATHS += \
+-I.. \
+-I../../../../../CMSIS/Include \
+-I../../../../../Device/EnergyMicro/EFM32TG/Include \
+-I../../../../../emlib/inc \
+-I../../../drivers \
+-I../../../bsp
+
+####################################################################
+# Files                                                            #
+####################################################################
+
+C_SRC +=  \
+../../../../../Device/EnergyMicro/EFM32TG/Source/system_efm32tg.c \
+../../../../../emlib/src/em_assert.c \
+../../../../../emlib/src/em_system.c \
+../../../../../emlib/src/em_cmu.c \
+../../../../../emlib/src/em_emu.c \
+../../../../../emlib/src/em_gpio.c \
+../../../drivers/led.c \
+../../../bsp/trace.c \
+../blink.c
+
+S_SRC +=  \
+../../../../../Device/EnergyMicro/EFM32TG/Source/G++/startup_efm32tg.s
+
+####################################################################
+# Rules                                                            #
+####################################################################
+
+C_FILES = $(notdir $(C_SRC) )
+S_FILES = $(notdir $(S_SRC) )
+#make list of source paths, sort also removes duplicates
+C_PATHS = $(sort $(dir $(C_SRC) ) )
+S_PATHS = $(sort $(dir $(S_SRC) ) )
+
+C_OBJS = $(addprefix $(OBJ_DIR)/, $(C_FILES:.c=.o))
+S_OBJS = $(addprefix $(OBJ_DIR)/, $(S_FILES:.s=.o))
+C_DEPS = $(addprefix $(OBJ_DIR)/, $(C_FILES:.c=.d))
+
+vpath %.c $(C_PATHS)
+vpath %.s $(S_PATHS)
+
+# Default build is debug build
+all:      debug
+
+debug:    CFLAGS += -DDEBUG -O0 -g3
+debug:    $(OBJ_DIR) $(LST_DIR) $(EXE_DIR) $(EXE_DIR)/$(PROJECTNAME).bin
+
+release:  CFLAGS += -DNDEBUG -O0 -g3 
+release:  $(OBJ_DIR) $(LST_DIR) $(EXE_DIR) $(EXE_DIR)/$(PROJECTNAME).bin
+
+# Create directories
+$(OBJ_DIR):
+	mkdir $(OBJ_DIR)
+	@echo "Created build directory."
+
+$(EXE_DIR):
+	mkdir $(EXE_DIR)
+	@echo "Created executable directory."
+
+$(LST_DIR):
+	mkdir $(LST_DIR)
+	@echo "Created list directory."
+
+# Create objects from C SRC files
+$(OBJ_DIR)/%.o: %.c
+	@echo "Building file: $<"
+	$(CC) $(CFLAGS) $(INCLUDEPATHS) -c -o $@ $<
+
+# Assemble .s files
+$(OBJ_DIR)/%.o: %.s
+	@echo "Assembling $<"
+	$(CC) $(ASMFLAGS) $(INCLUDEPATHS) -c -o $@ $<
+
+# Link
+$(EXE_DIR)/$(PROJECTNAME).out: $(C_OBJS) $(S_OBJS)
+	@echo "Linking target: $@"
+	$(CC) $(LDFLAGS) $(C_OBJS) $(S_OBJS) $(LIBS) -o $(EXE_DIR)/$(PROJECTNAME).out
+
+# Create binary file
+$(EXE_DIR)/$(PROJECTNAME).bin: $(EXE_DIR)/$(PROJECTNAME).out
+	@echo "Creating binary file"
+	$(OBJCOPY) -O binary $(EXE_DIR)/$(PROJECTNAME).out $(EXE_DIR)/$(PROJECTNAME).bin
+# Uncomment next line to produce assembly listing of entire program
+#	$(DUMP) $(EXE_DIR)/$(PROJECTNAME).out>$(LST_DIR)/$(PROJECTNAME)out.lst
+
+clean:
+	$(RM) $(OBJ_DIR) $(LST_DIR) $(EXE_DIR)
+
+# include auto-generated dependency files (explicit rules)
+ifneq (clean,$(findstring clean, $(MAKECMDGOALS)))
+-include $(C_DEPS)
+endif

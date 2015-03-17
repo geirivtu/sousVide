@@ -1,0 +1,712 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.30.6.53336/W32 for ARM              29/Apr/2012  11:37:35 #
+# Copyright 2007-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG_ #
+#                    STK3300\examples\SousVide -                              #
+#                    Backup\iar\blink\Debug\Exe\blink.out                     #
+#    Map file     =  C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG_ #
+#                    STK3300\examples\SousVide -                              #
+#                    Backup\iar\blink\Debug\List\blink.map                    #
+#    Command line =  "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\PID.o"                        #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\blink.o"                      #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\capsense.o"                   #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\em_acmp.o"                    #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\em_adc.o"                     #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\em_assert.o"                  #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\em_cmu.o"                     #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\em_emu.o"                     #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\em_gpio.o"                    #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\em_int.o"                     #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\em_lcd.o"                     #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\em_lesense.o"                 #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\em_rtc.o"                     #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\em_system.o"                  #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\em_timer.o"                   #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\em_vcmp.o"                    #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\led.o"                        #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\menu.o"                       #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\readTemp.o"                   #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\rtc.o"                        #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\segmentfont.o"                #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\segmentlcd.o"                 #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\ssr.o"                        #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\startup_efm32tg.o"            #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\system_efm32tg.o"             #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\trace.o"                      #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Obj\vddcheck.o" --redirect        #
+#                    _Printf=_PrintfFull --redirect _Scanf=_ScanfFull -o      #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\Exe\blink.out" --map              #
+#                    "C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG #
+#                    _STK3300\examples\SousVide -                             #
+#                    Backup\iar\blink\Debug\List\blink.map" --config          #
+#                    "C:\Program Files (x86)\IAR Systems\Embedded Workbench   #
+#                    6.0 Kickstart\arm\config\linker\EnergyMicro\EFM32TG840F3 #
+#                    2.icf" --entry __iar_program_start --vfe                 #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000000 to 0x00007fff] { ro };
+"P2":  place in [from 0x20000000 to 0x20000fff] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                       0x9c
+  .intvec            ro code  0x00000000    0x9c  startup_efm32tg.o [1]
+                            - 0x0000009c    0x9c
+
+"P1":                                     0x54f0
+  .text              ro code  0x0000009c   0xd1e  xprintffull.o [3]
+  .text              ro code  0x00000dba    0x2e  copy_init3.o [5]
+  .text              ro code  0x00000de8    0x16  strchr.o [5]
+  .text              ro code  0x00000dfe    0x22  zero_init3.o [5]
+  .text              ro code  0x00000e20    0x36  strlen.o [5]
+  .text              ro code  0x00000e56    0x1a  xsnprout.o [3]
+  .text              ro code  0x00000e70    0x58  memchr.o [5]
+  .text              ro code  0x00000ec8    0xee  I64DivMod.o [5]
+  .text              ro code  0x00000fb8    0x76  ABImemcpy.o [5]
+  .text              ro code  0x0000102e    0x44  xdnorm.o [4]
+  .text              ro code  0x00001074    0x2e  DblCmpLe.o [4]
+  .text              ro code  0x000010a4    0x2e  DblCmpGe.o [4]
+  .text              ro code  0x000010d4   0x11a  xdscale.o [4]
+  .text              ro code  0x000011f0    0x58  DblToI32.o [4]
+  .text              ro code  0x00001248    0x30  I32ToDbl.o [4]
+  .text              ro code  0x00001278   0x180  DblSub.o [4]
+  .text              ro code  0x000013f8   0x1a2  DblMul.o [4]
+  .text              ro code  0x0000159c   0x246  DblDiv.o [4]
+  .text              ro code  0x000017e2     0xe  div.o [3]
+  .text              ro code  0x000017f0     0x2  I64DivZer.o [5]
+  .text              ro code  0x000017f4    0xd4  DblAdd.o [4]
+  .text              ro code  0x000018c8   0x9bc  em_cmu.o [1]
+  .text              ro code  0x00002284     0x2  em_assert.o [1]
+  .text              ro code  0x00002288    0xe4  system_efm32tg.o [1]
+  .text              ro code  0x0000236c    0x14  em_emu.o [1]
+  .text              ro code  0x00002380   0x5e4  em_lesense.o [1]
+  .text              ro code  0x00002964   0x5cc  capsense.o [1]
+  .text              ro code  0x00002f30   0x224  em_gpio.o [1]
+  .text              ro code  0x00003154    0xc4  em_acmp.o [1]
+  .text              ro code  0x00003218   0x4b8  segmentlcd.o [1]
+  .text              ro code  0x000036d0     0x8  abs.o [3]
+  .text              ro code  0x000036d8   0x2cc  em_lcd.o [1]
+  .text              ro code  0x000039a4   0x300  menu.o [1]
+  .text              ro code  0x00003ca4   0x19c  PID.o [1]
+  .text              ro code  0x00003e40    0x44  snprintf.o [3]
+  .text              ro code  0x00003e84    0xd4  ssr.o [1]
+  .text              ro code  0x00003f58    0xe0  readTemp.o [1]
+  .text              ro code  0x00004038    0x2e  I32ToFlt.o [4]
+  .text              ro code  0x00004068    0x44  FltToS32.o [4]
+  .text              ro code  0x000040ac    0xe6  FltSub.o [4]
+  .text              ro code  0x00004194    0x24  FltCmpLe.o [4]
+  .text              ro code  0x000041b8    0xd8  FltMul.o [4]
+  .text              ro code  0x00004290    0x84  FltAdd.o [4]
+  .text              ro code  0x00004314    0xfc  FltDiv.o [4]
+  .text              ro code  0x00004410    0x24  FltCmpGe.o [4]
+  .text              ro code  0x00004434    0x24  FltToU32.o [4]
+  .text              ro code  0x00004458   0x184  em_timer.o [1]
+  .text              ro code  0x000045dc   0x208  em_adc.o [1]
+  .rodata            const    0x000047e4   0x200  capsense.o [1]
+  .rodata            const    0x000049e4   0x200  capsense.o [1]
+  .text              ro code  0x00004be4   0x140  rtc.o [1]
+  .text              ro code  0x00004d24    0x90  em_rtc.o [1]
+  .text              ro code  0x00004db4   0x134  blink.o [1]
+  .text              ro code  0x00004ee8    0x28  led.o [1]
+  .rodata            const    0x00004f10   0x120  segmentfont.o [1]
+  .rodata            const    0x00005030    0xb8  segmentfont.o [1]
+  .rodata            const    0x000050e8    0x44  em_acmp.o [1]
+  .rodata            const    0x0000512c    0x44  em_gpio.o [1]
+  .rodata            const    0x00005170    0x44  em_lesense.o [1]
+  .rodata            const    0x000051b4    0x44  em_timer.o [1]
+  .rodata            const    0x000051f8    0x40  capsense.o [1]
+  .rodata            const    0x00005238    0x40  em_adc.o [1]
+  .rodata            const    0x00005278    0x40  em_cmu.o [1]
+  .rodata            const    0x000052b8    0x40  em_lcd.o [1]
+  .rodata            const    0x000052f8    0x40  em_rtc.o [1]
+  .text              ro code  0x00005338    0x2c  data_init3.o [5]
+  .iar.init_table    const    0x00005364    0x24  - Linker created -
+  .rodata            const    0x00005388    0x18  capsense.o [1]
+  .rodata            const    0x000053a0    0x18  segmentfont.o [1]
+  .text              ro code  0x000053b8    0x16  cmain.o [5]
+  .text              ro code  0x000053ce     0x4  low_level_init.o [3]
+  .text              ro code  0x000053d2     0x4  exit.o [3]
+  .text              ro code  0x000053d8     0xa  cexit.o [5]
+  .text              ro code  0x000053e4     0xc  XXexit.o [5]
+  .rodata            const    0x000053f0    0x14  capsense.o [1]
+  .rodata            const    0x00005404    0x14  capsense.o [1]
+  .rodata            const    0x00005418    0x14  segmentlcd.o [1]
+  .rodata            const    0x0000542c    0x10  capsense.o [1]
+  .rodata            const    0x0000543c    0x10  ssr.o [1]
+  .text              ro code  0x0000544c    0x10  startup_efm32tg.o [1]
+  .text              ro code  0x0000545c     0xc  cstartup_M.o [5]
+  .rodata            const    0x00005468     0x8  menu.o [1]
+  .rodata            const    0x00005470     0x8  menu.o [1]
+  .rodata            const    0x00005478     0x8  menu.o [1]
+  .rodata            const    0x00005480     0x8  menu.o [1]
+  .rodata            const    0x00005488     0x8  menu.o [1]
+  .rodata            const    0x00005490     0x8  menu.o [1]
+  .rodata            const    0x00005498     0x8  readTemp.o [1]
+  .text              ro code  0x000054a0     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054a4     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054a8     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054ac     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054b0     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054b4     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054b8     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054bc     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054c0     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054c4     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054c8     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054cc     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054d0     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054d4     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054d8     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054dc     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054e0     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054e4     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054e8     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054ec     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054f0     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054f4     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054f8     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x000054fc     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x00005500     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x00005504     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x00005508     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x0000550c     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x00005510     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x00005514     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x00005518     0x4  startup_efm32tg.o [1]
+  .text              ro code  0x0000551c     0x4  startup_efm32tg.o [1]
+  .rodata            const    0x00005520     0x0  bwt_init3c.o [5]
+  Initializer bytes  ro data  0x00005520    0x6c  <for P2 s0>
+                            - 0x0000558c  0x54f0
+
+"P2", part 1 of 3:                          0x6c
+  P2 s0                       0x20000000    0x6c  <Init block>
+    .data            inited   0x20000000    0x40  capsense.o [1]
+    .data            inited   0x20000040    0x14  menu.o [1]
+    .data            inited   0x20000054     0x4  menu.o [1]
+    .data            inited   0x20000058     0x4  menu.o [1]
+    .data            inited   0x2000005c     0x4  menu.o [1]
+    .data            inited   0x20000060     0x4  system_efm32tg.o [1]
+    .data            inited   0x20000064     0x4  system_efm32tg.o [1]
+    .data            inited   0x20000068     0x1  capsense.o [1]
+    .data            inited   0x20000069     0x1  menu.o [1]
+    .data            inited   0x2000006a     0x1  menu.o [1]
+                            - 0x2000006c    0x6c
+
+"P2", part 2 of 3:                          0x9c
+  .bss               zero     0x2000006c    0x40  capsense.o [1]
+  .bss               zero     0x200000ac    0x14  PID.o [1]
+  .bss               zero     0x200000c0     0x8  capsense.o [1]
+  .bss               zero     0x200000c8     0x4  PID.o [1]
+  .bss               zero     0x200000cc     0x4  PID.o [1]
+  .bss               zero     0x200000d0     0x4  PID.o [1]
+  .bss               zero     0x200000d4     0x4  PID.o [1]
+  .bss               zero     0x200000d8     0x4  PID.o [1]
+  .bss               zero     0x200000dc     0x4  capsense.o [1]
+  .bss               zero     0x200000e0     0x4  capsense.o [1]
+  .bss               zero     0x200000e4     0x4  em_int.o [1]
+  .bss               zero     0x200000e8     0x4  menu.o [1]
+  .bss               zero     0x200000ec     0x4  menu.o [1]
+  .bss               zero     0x200000f0     0x4  menu.o [1]
+  .bss               zero     0x200000f4     0x4  rtc.o [1]
+  .bss               zero     0x200000f8     0x4  rtc.o [1]
+  .bss               zero     0x200000fc     0x4  system_efm32tg.o [1]
+  .bss               zero     0x20000100     0x2  em_emu.o [1]
+  .bss               zero     0x20000102     0x1  capsense.o [1]
+  .bss               zero     0x20000103     0x1  menu.o [1]
+  .bss               zero     0x20000104     0x1  rtc.o [1]
+                            - 0x20000105    0x99
+
+"P2", part 3 of 3:                         0x400
+  CSTACK                      0x20000108   0x400  <Block>
+    CSTACK           uninit   0x20000108   0x400  <Block tail>
+                            - 0x20000508   0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x99:
+          0x2000006c  0x99
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x6c (100% of destination):
+          0x00005520  0x6c
+    1 destination range, total size 0x6b:
+          0x20000000  0x6b
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module             ro code  ro data  rw data
+    ------             -------  -------  -------
+C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG_STK3300\examples\SousVide - Backup\iar\blink\Debug\Obj: [1]
+    PID.o                  412                40
+    blink.o                308
+    capsense.o           1 484    1 233      146
+    em_acmp.o              196       68
+    em_adc.o               520       64
+    em_assert.o              2
+    em_cmu.o             2 492       64
+    em_emu.o                20                 2
+    em_gpio.o              548       68
+    em_int.o                                   4
+    em_lcd.o               716       64
+    em_lesense.o         1 508       68
+    em_rtc.o               144       64
+    em_timer.o             388       68
+    led.o                   40
+    menu.o                 768       82       47
+    readTemp.o             224        8
+    rtc.o                  320                 9
+    segmentfont.o                   496
+    segmentlcd.o         1 208       20
+    ssr.o                  212       16
+    startup_efm32tg.o      300
+    system_efm32tg.o       228        8       12
+    --------------------------------------------
+    Total:              12 038    2 391      260
+
+command line: [2]
+    --------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    abs.o                    8
+    div.o                   14
+    exit.o                   4
+    low_level_init.o         4
+    snprintf.o              68
+    xprintffull.o        3 358
+    xsnprout.o              26
+    --------------------------------------------
+    Total:               3 482
+
+m7M_tl.a: [4]
+    DblAdd.o               212
+    DblCmpGe.o              46
+    DblCmpLe.o              46
+    DblDiv.o               582
+    DblMul.o               418
+    DblSub.o               384
+    DblToI32.o              88
+    FltAdd.o               132
+    FltCmpGe.o              36
+    FltCmpLe.o              36
+    FltDiv.o               252
+    FltMul.o               216
+    FltSub.o               230
+    FltToS32.o              68
+    FltToU32.o              36
+    I32ToDbl.o              48
+    I32ToFlt.o              46
+    xdnorm.o                68
+    xdscale.o              282
+    --------------------------------------------
+    Total:               3 226
+
+rt7M_tl.a: [5]
+    ABImemcpy.o            118
+    I64DivMod.o            238
+    I64DivZer.o              2
+    XXexit.o                12
+    bwt_init3c.o
+    cexit.o                 10
+    cmain.o                 22
+    copy_init3.o            46
+    cstartup_M.o            12
+    data_init3.o            44
+    memchr.o                88
+    strchr.o                22
+    strlen.o                54
+    zero_init3.o            34
+    --------------------------------------------
+    Total:                 702
+
+    Gaps                    24
+    Linker created                   37    1 024
+------------------------------------------------
+    Grand Total:        19 472    2 428    1 284
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+?main                   0x000053b9         Code  Gb  cmain.o [5]
+ACMP0_IRQHandler        0x000054d9         Code  Wk  startup_efm32tg.o [1]
+ACMP_CapsenseInit       0x00003163   0x7a  Code  Gb  em_acmp.o [1]
+ACMP_GPIOSetup          0x000031dd   0x2e  Code  Gb  em_acmp.o [1]
+ADC0_IRQHandler         0x00003f87    0xc  Code  Gb  readTemp.o [1]
+ADC_CalibrateLoadSingle
+                        0x000045dd   0xba  Code  Lc  em_adc.o [1]
+ADC_DataSingleGet       0x00003f71    0x4  Code  Lc  readTemp.o [1]
+ADC_Init                0x00004697   0x4c  Code  Gb  em_adc.o [1]
+ADC_InitSingle          0x000046e3   0x6c  Code  Gb  em_adc.o [1]
+ADC_IntClear            0x00003f75    0x4  Code  Lc  readTemp.o [1]
+ADC_IntEnable           0x00003f79    0x8  Code  Lc  readTemp.o [1]
+ADC_PrescaleCalc        0x0000474f   0x40  Code  Gb  em_adc.o [1]
+ADC_Start               0x00003f81    0x6  Code  Lc  readTemp.o [1]
+ADC_TimebaseCalc        0x0000478f   0x28  Code  Gb  em_adc.o [1]
+AES_IRQHandler          0x0000551d         Code  Wk  startup_efm32tg.o [1]
+BITBAND_Peripheral      0x00003155    0xe  Code  Lc  em_acmp.o [1]
+BITBAND_Peripheral      0x000018c9    0xe  Code  Lc  em_cmu.o [1]
+BITBAND_Peripheral      0x00002f31    0xe  Code  Lc  em_gpio.o [1]
+BITBAND_Peripheral      0x00003703    0xe  Code  Lc  em_lcd.o [1]
+BITBAND_Peripheral      0x0000238b    0xe  Code  Lc  em_lesense.o [1]
+BITBAND_Peripheral      0x00004d25    0xe  Code  Lc  em_rtc.o [1]
+BusFault_Handler        0x000054ad         Code  Wk  startup_efm32tg.o [1]
+CAPSENSE_Init           0x00002dc1   0x22  Code  Gb  capsense.o [1]
+CAPSENSE_getSliderPosition
+                        0x00002ced   0xd4  Code  Gb  capsense.o [1]
+CAPSENSE_setupACMP      0x00002af5   0x38  Code  Gb  capsense.o [1]
+CAPSENSE_setupCMU       0x00002a4f   0x6a  Code  Gb  capsense.o [1]
+CAPSENSE_setupCallbacks
+                        0x00002c61    0xa  Code  Gb  capsense.o [1]
+CAPSENSE_setupGPIO      0x00002ab9   0x3c  Code  Gb  capsense.o [1]
+CAPSENSE_setupLESENSE   0x00002b2d  0x134  Code  Gb  capsense.o [1]
+CHIP_Init               0x00004de5    0x2  Code  Lc  blink.o [1]
+CMU_AUXClkGet           0x0000198d   0x64  Code  Lc  em_cmu.o [1]
+CMU_ClockDivSet         0x00001abd  0x1f4  Code  Gb  em_cmu.o [1]
+CMU_ClockEnable         0x00001cb1   0x92  Code  Gb  em_cmu.o [1]
+CMU_ClockFreqGet        0x00001d43  0x14c  Code  Gb  em_cmu.o [1]
+CMU_ClockSelectGet      0x00001e8f   0xde  Code  Gb  em_cmu.o [1]
+CMU_ClockSelectSet      0x00001f6d  0x1aa  Code  Gb  em_cmu.o [1]
+CMU_DBGClkGet           0x000019f1   0x3c  Code  Lc  em_cmu.o [1]
+CMU_DivToLog2           0x0000190b   0x26  Code  Lc  em_cmu.o [1]
+CMU_FlashWaitStateControl
+                        0x00001931   0x5c  Code  Lc  em_cmu.o [1]
+CMU_FlashWaitStateMax   0x000018d7   0x34  Code  Lc  em_cmu.o [1]
+CMU_IRQHandler          0x0000550d         Code  Wk  startup_efm32tg.o [1]
+CMU_LCDClkFDIVSet       0x0000212d   0x2e  Code  Gb  em_cmu.o [1]
+CMU_LFClkGet            0x00001a2d   0x7a  Code  Lc  em_cmu.o [1]
+CMU_OscillatorEnable    0x00002175   0xa6  Code  Gb  em_cmu.o [1]
+CMU_Sync                0x00001aa7   0x16  Code  Lc  em_cmu.o [1]
+CSTACK$$Base            0x20000108          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000508          --   Gb  - Linker created -
+ClearDisplay            0x00003c61   0x16  Code  Gb  menu.o [1]
+DAC0_IRQHandler         0x000054e1         Code  Wk  startup_efm32tg.o [1]
+DMA_IRQHandler          0x000054c5         Code  Wk  startup_efm32tg.o [1]
+DebugMon_Handler        0x000054b9         Code  Wk  startup_efm32tg.o [1]
+EFM_Alphabet            0x00005030   0xb8  Data  Gb  segmentfont.o [1]
+EFM_Display             0x00004f10  0x120  Data  Gb  segmentfont.o [1]
+EFM_Numbers             0x000053a0   0x18  Data  Gb  segmentfont.o [1]
+EMU_UpdateOscConfig     0x0000236d    0xa  Code  Gb  em_emu.o [1]
+GPIO_DriveModeSet       0x00002f3f   0x42  Code  Gb  em_gpio.o [1]
+GPIO_EVEN_IRQHandler    0x00004e59   0x10  Code  Gb  blink.o [1]
+GPIO_IntClear           0x00004de7    0x6  Code  Lc  blink.o [1]
+GPIO_IntConfig          0x00002f81   0xa2  Code  Gb  em_gpio.o [1]
+GPIO_ODD_IRQHandler     0x00004e49   0x10  Code  Gb  blink.o [1]
+GPIO_PinModeSet         0x00003023   0xe4  Code  Gb  em_gpio.o [1]
+GPIO_PinOutToggle       0x00003107   0x2c  Code  Gb  em_gpio.o [1]
+HardFault_Handler       0x000054a5         Code  Wk  startup_efm32tg.o [1]
+I2C0_IRQHandler         0x000054e5         Code  Wk  startup_efm32tg.o [1]
+INT_Disable             0x00002987   0x24  Code  Lc  capsense.o [1]
+INT_Enable              0x000029ab   0x2e  Code  Lc  capsense.o [1]
+INT_LockCnt             0x200000e4    0x4  Data  Gb  em_int.o [1]
+LCD_Enable              0x000036d9   0x2a  Code  Lc  em_lcd.o [1]
+LCD_FreezeEnable        0x00003219   0x1a  Code  Lc  segmentlcd.o [1]
+LCD_IRQHandler          0x00005515         Code  Wk  startup_efm32tg.o [1]
+LCD_Init                0x00003711   0x4c  Code  Gb  em_lcd.o [1]
+LCD_IntDisable          0x0000323f   0x10  Code  Lc  segmentlcd.o [1]
+LCD_SegmentRangeEnable  0x00003783   0x22  Code  Gb  em_lcd.o [1]
+LCD_SegmentSet          0x000037a5   0xdc  Code  Gb  em_lcd.o [1]
+LCD_SegmentSetLow       0x00003881   0xde  Code  Gb  em_lcd.o [1]
+LCD_SyncBusyDelay       0x00003233    0xc  Code  Lc  segmentlcd.o [1]
+LCD_VBoostSet           0x0000395f   0x10  Code  Gb  em_lcd.o [1]
+LCD_VLCDSelect          0x0000375d   0x26  Code  Gb  em_lcd.o [1]
+LED_Init                0x00004ef5   0x18  Code  Gb  led.o [1]
+LED_Toggle              0x00004ee9    0xc  Code  Gb  led.o [1]
+LESENSE_ChannelAllConfig
+                        0x00002621   0x1c  Code  Gb  em_lesense.o [1]
+LESENSE_ChannelConfig   0x0000263d  0x170  Code  Gb  em_lesense.o [1]
+LESENSE_ChannelThresSet
+                        0x000027ff   0x68  Code  Gb  em_lesense.o [1]
+LESENSE_ChannelTimingSet
+                        0x000027ad   0x52  Code  Gb  em_lesense.o [1]
+LESENSE_ClkDivSet       0x000025bf   0x62  Code  Gb  em_lesense.o [1]
+LESENSE_DecoderStateSet
+                        0x00002867   0x1c  Code  Gb  em_lesense.o [1]
+LESENSE_IRQHandler      0x00002c6b   0x82  Code  Gb  capsense.o [1]
+LESENSE_Init            0x00002399  0x12e  Code  Gb  em_lesense.o [1]
+LESENSE_IntClear        0x00002a15    0x8  Code  Lc  capsense.o [1]
+LESENSE_IntDisable      0x00002a2d   0x10  Code  Lc  capsense.o [1]
+LESENSE_IntEnable       0x00002a1d   0x10  Code  Lc  capsense.o [1]
+LESENSE_IntGetEnabled   0x00002a3d   0x12  Code  Lc  capsense.o [1]
+LESENSE_Reset           0x00002883   0x96  Code  Gb  em_lesense.o [1]
+LESENSE_ResultBufferClear
+                        0x000029ed    0xa  Code  Lc  capsense.o [1]
+LESENSE_ScanFreqSet     0x000024c7   0xa0  Code  Gb  em_lesense.o [1]
+LESENSE_ScanModeSet     0x00002567   0x28  Code  Gb  em_lesense.o [1]
+LESENSE_ScanResultDataBufferGet
+                        0x00002a07    0xe  Code  Lc  capsense.o [1]
+LESENSE_ScanResultDataGet
+                        0x000029ff    0x8  Code  Lc  capsense.o [1]
+LESENSE_ScanStart       0x000029d9    0xa  Code  Lc  capsense.o [1]
+LESENSE_ScanStart       0x00002381    0xa  Code  Lc  em_lesense.o [1]
+LESENSE_ScanStop        0x000029e3    0xa  Code  Lc  capsense.o [1]
+LESENSE_StartDelaySet   0x0000258f   0x30  Code  Gb  em_lesense.o [1]
+LESENSE_StatusGet       0x000029f7    0x8  Code  Lc  capsense.o [1]
+LETIMER0_IRQHandler     0x00005501         Code  Wk  startup_efm32tg.o [1]
+LEUART0_IRQHandler      0x000054fd         Code  Wk  startup_efm32tg.o [1]
+MSC_IRQHandler          0x00005519         Code  Wk  startup_efm32tg.o [1]
+MemManage_Handler       0x000054a9         Code  Wk  startup_efm32tg.o [1]
+Menu_Back               0x000039fd   0x1e  Code  Gb  menu.o [1]
+Menu_Init               0x000039a5   0x1a  Code  Gb  menu.o [1]
+Menu_Select             0x00003a1b   0x64  Code  Gb  menu.o [1]
+Menu_Update             0x000039bf   0x3e  Code  Gb  menu.o [1]
+NMI_Handler             0x000054a1         Code  Wk  startup_efm32tg.o [1]
+NVIC_ClearPendingIRQ    0x00004dcd   0x18  Code  Lc  blink.o [1]
+NVIC_ClearPendingIRQ    0x00004bfd   0x18  Code  Lc  rtc.o [1]
+NVIC_EnableIRQ          0x00004db5   0x18  Code  Lc  blink.o [1]
+NVIC_EnableIRQ          0x00002965   0x1a  Code  Lc  capsense.o [1]
+NVIC_EnableIRQ          0x00003f59   0x18  Code  Lc  readTemp.o [1]
+NVIC_EnableIRQ          0x00004be5   0x18  Code  Lc  rtc.o [1]
+PCNT0_IRQHandler        0x00005505         Code  Wk  startup_efm32tg.o [1]
+PID_Init                0x00003ca5    0xc  Code  Gb  PID.o [1]
+PID_getSetPoint         0x00003cb7    0x6  Code  Gb  PID.o [1]
+PID_getTemp             0x00003cbd    0x6  Code  Gb  PID.o [1]
+PID_runController       0x00003cc3  0x148  Code  Gb  PID.o [1]
+PID_setPoint            0x00003cb1    0x6  Code  Gb  PID.o [1]
+PendSV_Handler          0x000054bd         Code  Wk  startup_efm32tg.o [1]
+RTC_CompareSet          0x00004d33   0x34  Code  Gb  em_rtc.o [1]
+RTC_Enable              0x00004d67   0x12  Code  Gb  em_rtc.o [1]
+RTC_IRQHandler          0x00004c97   0x24  Code  Gb  rtc.o [1]
+RTC_Init                0x00004d79   0x2a  Code  Gb  em_rtc.o [1]
+RTC_IntClear            0x00004c15    0x6  Code  Lc  rtc.o [1]
+RTC_IntDisable          0x00004c1b    0xc  Code  Lc  rtc.o [1]
+RTC_IntEnable           0x00004c27    0xc  Code  Lc  rtc.o [1]
+RTC_Setup               0x00004c33   0x64  Code  Gb  rtc.o [1]
+RTC_Trigger             0x00004cbb   0x40  Code  Gb  rtc.o [1]
+Region$$Table$$Base     0x00005364          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00005388          --   Gb  - Linker created -
+Reset_Handler           0x0000544d         Code  Wk  startup_efm32tg.o [1]
+SSR_Init                0x00003e91   0x7e  Code  Gb  ssr.o [1]
+SSR_Set                 0x00003f0f   0x30  Code  Gb  ssr.o [1]
+SVC_Handler             0x000054b5         Code  Wk  startup_efm32tg.o [1]
+SegmentLCD_AllOff       0x000034b5   0x64  Code  Gb  segmentlcd.o [1]
+SegmentLCD_AlphaNumberOff
+                        0x000033b1   0x64  Code  Gb  segmentlcd.o [1]
+SegmentLCD_Init         0x0000361f   0x7e  Code  Gb  segmentlcd.o [1]
+SegmentLCD_NumberHack   0x0000324f   0xfe  Code  Gb  segmentlcd.o [1]
+SegmentLCD_NumberOff    0x0000334d   0x64  Code  Gb  segmentlcd.o [1]
+SegmentLCD_Symbol       0x00003519  0x106  Code  Gb  segmentlcd.o [1]
+SegmentLCD_Write        0x00003415   0xa0  Code  Gb  segmentlcd.o [1]
+SysTick_Handler         0x000054c1         Code  Wk  startup_efm32tg.o [1]
+SystemCoreClock         0x200000fc    0x4  Data  Gb  system_efm32tg.o [1]
+SystemCoreClockGet      0x00002289   0x1a  Code  Gb  system_efm32tg.o [1]
+SystemCoreClockUpdate   0x0000297f    0x8  Code  Lc  capsense.o [1]
+SystemHFClockGet        0x000022a3   0x86  Code  Gb  system_efm32tg.o [1]
+SystemHFXOClock         0x20000060    0x4  Data  Lc  system_efm32tg.o [1]
+SystemInit              0x00002329    0x2  Code  Gb  system_efm32tg.o [1]
+SystemLFRCOClockGet     0x0000232b    0x6  Code  Gb  system_efm32tg.o [1]
+SystemLFXOClock         0x20000064    0x4  Data  Lc  system_efm32tg.o [1]
+SystemLFXOClockGet      0x00002337    0x6  Code  Gb  system_efm32tg.o [1]
+SystemULFRCOClockGet    0x00002331    0x6  Code  Gb  system_efm32tg.o [1]
+TIMER0_IRQHandler       0x000054cd         Code  Wk  startup_efm32tg.o [1]
+TIMER1_IRQHandler       0x000054ed         Code  Wk  startup_efm32tg.o [1]
+TIMER_CompareBufSet     0x00003e85    0x8  Code  Lc  ssr.o [1]
+TIMER_Init              0x00004459   0xd4  Code  Gb  em_timer.o [1]
+TIMER_InitCC            0x0000452d   0xa2  Code  Gb  em_timer.o [1]
+TIMER_TopSet            0x00003e8d    0x4  Code  Lc  ssr.o [1]
+USART0_RX_IRQHandler    0x000054d1         Code  Wk  startup_efm32tg.o [1]
+USART0_TX_IRQHandler    0x000054d5         Code  Wk  startup_efm32tg.o [1]
+USART1_RX_IRQHandler    0x000054f1         Code  Wk  startup_efm32tg.o [1]
+USART1_TX_IRQHandler    0x000054f5         Code  Wk  startup_efm32tg.o [1]
+UsageFault_Handler      0x000054b1         Code  Wk  startup_efm32tg.o [1]
+VCMP_IRQHandler         0x00005511         Code  Wk  startup_efm32tg.o [1]
+_GenldFull              0x00000b01  0x270  Code  Lc  xprintffull.o [3]
+_LdtobFull              0x000006f1  0x400  Code  Lc  xprintffull.o [3]
+_LitobFull              0x000005cb  0x126  Code  Lc  xprintffull.o [3]
+_PrintfFull             0x0000009d  0x52e  Code  Gb  xprintffull.o [3]
+_PutcharsFull           0x00000d71   0x2e  Code  Lc  xprintffull.o [3]
+_SNProut                0x00000e57   0x1a  Code  Gb  xsnprout.o [3]
+__Vectors               0x00000000          --   Gb  startup_efm32tg.o [1]
+__Vectors_End           0x0000009c         Data  Gb  startup_efm32tg.o [1]
+__Vectors_Size {Abs}    0x0000009c          --   Gb  startup_efm32tg.o [1]
+__aeabi_cdcmple         0x00001075         Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x000010a5         Code  Gb  DblCmpGe.o [4]
+__aeabi_cfcmple         0x00004195         Code  Gb  FltCmpLe.o [4]
+__aeabi_cfrcmple        0x00004411         Code  Gb  FltCmpGe.o [4]
+__aeabi_d2iz            0x000011f1         Code  Gb  DblToI32.o [4]
+__aeabi_d2uiz           0x0000121d         Code  Gb  DblToI32.o [4]
+__aeabi_ddiv            0x0000159d         Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x000013f9         Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x00001279         Code  Gb  DblSub.o [4]
+__aeabi_f2iz            0x00004069         Code  Gb  FltToS32.o [4]
+__aeabi_f2uiz           0x00004435         Code  Gb  FltToU32.o [4]
+__aeabi_fadd            0x00004291         Code  Gb  FltAdd.o [4]
+__aeabi_fdiv            0x00004315         Code  Gb  FltDiv.o [4]
+__aeabi_fmul            0x000041b9         Code  Gb  FltMul.o [4]
+__aeabi_fsub            0x000040ad         Code  Gb  FltSub.o [4]
+__aeabi_i2d             0x00001249         Code  Gb  I32ToDbl.o [4]
+__aeabi_i2f             0x00004039         Code  Gb  I32ToFlt.o [4]
+__aeabi_ldiv0           0x000017f1         Code  Gb  I64DivZer.o [5]
+__aeabi_memcpy          0x00000fb9         Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy4         0x00000fd9         Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy8         0x00000fd9         Code  Gb  ABImemcpy.o [5]
+__aeabi_ui2d            0x0000125d         Code  Gb  I32ToDbl.o [4]
+__aeabi_uldivmod        0x00000ec9         Code  Gb  I64DivMod.o [5]
+__cmain                 0x000053b9         Code  Gb  cmain.o [5]
+__exit                  0x000053e5         Code  Gb  XXexit.o [5]
+__iar_Dnorm             0x0000102f   0x44  Code  Gb  xdnorm.o [4]
+__iar_Dscale            0x000010d5  0x106  Code  Gb  xdscale.o [4]
+__iar_Memchr            0x00000e71         Code  Gb  memchr.o [5]
+__iar_SB                0x00005520         Data  Gb  bwt_init3c.o [5]
+__iar_Strchr            0x00000de9         Code  Gb  strchr.o [5]
+__iar_copy_init3        0x00000dbb   0x2e  Code  Gb  copy_init3.o [5]
+__iar_d2uiz             0x00001229         Code  Gb  DblToI32.o [4]
+__iar_dadd              0x000017f5         Code  Gb  DblAdd.o [4]
+__iar_data_init3        0x00005339   0x2c  Code  Gb  data_init3.o [5]
+__iar_dsub              0x0000128d         Code  Gb  DblSub.o [4]
+__iar_dsubStart         0x0000129f         Code  Gb  DblSub.o [4]
+__iar_fadd              0x000042a1         Code  Gb  FltAdd.o [4]
+__iar_fsub              0x000040bd         Code  Gb  FltSub.o [4]
+__iar_fsubStart         0x000040cd         Code  Gb  FltSub.o [4]
+__iar_program_start     0x0000545d         Code  Gb  cstartup_M.o [5]
+__iar_ui2d              0x00001261         Code  Gb  I32ToDbl.o [4]
+__iar_ui2f              0x0000404d         Code  Gb  I32ToFlt.o [4]
+__iar_zero_init3        0x00000dff   0x22  Code  Gb  zero_init3.o [5]
+__low_level_init        0x000053cf    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000         Data  Gb  startup_efm32tg.o [1]
+__vector_table_0x1c     0x0000001c         Data  Gb  startup_efm32tg.o [1]
+_call_main              0x000053c5         Code  Gb  cmain.o [5]
+_exit                   0x000053d9         Code  Gb  cexit.o [5]
+_main                   0x000053cb         Code  Gb  cmain.o [5]
+abs                     0x000036d1    0x8  Code  Gb  abs.o [3]
+activesubMenu           0x200000ec    0x4  Data  Gb  menu.o [1]
+assertEFM               0x00002285    0x2  Code  Gb  em_assert.o [1]
+capSenseChTrigger       0x00003c35    0x2  Code  Gb  menu.o [1]
+capSenseScanComplete    0x00003c31    0x2  Code  Gb  menu.o [1]
+channelMaxValues        0x20000000   0x40  Data  Lc  capsense.o [1]
+channelValues           0x2000006c   0x40  Data  Lc  capsense.o [1]
+channelsInUse           0x0000542c   0x10  Data  Lc  capsense.o [1]
+clearDisplay            0x20000103    0x1  Data  Lc  menu.o [1]
+cmuStatus               0x20000100    0x2  Data  Lc  em_emu.o [1]
+currentChannel          0x20000102    0x1  Data  Lc  capsense.o [1]
+currentItem             0x20000069    0x1  Data  Lc  menu.o [1]
+div                     0x000017e3    0xe  Code  Gb  div.o [3]
+exit                    0x000053d3    0x4  Code  Gb  exit.o [3]
+getCapSenseScrollInterval
+                        0x00003b51   0xde  Code  Gb  menu.o [1]
+gpioSetup               0x00004ded   0x5c  Code  Gb  blink.o [1]
+iTempPredict            0x00003c37   0x24  Code  Gb  menu.o [1]
+initAdcTemperature      0x00003f93   0x5e  Code  Gb  readTemp.o [1]
+lastMeasuredTemp        0x200000cc    0x4  Data  Lc  PID.o [1]
+lesenseChCb             0x200000e0    0x4  Data  Lc  capsense.o [1]
+lesenseScanCb           0x200000dc    0x4  Data  Lc  capsense.o [1]
+main                    0x00004e7f   0x4e  Code  Gb  blink.o [1]
+memchr                  0x00000e71         Code  Gb  memchr.o [5]
+menu                    0x20000040   0x14  Data  Gb  menu.o [1]
+menuState               0x2000006a    0x1  Data  Lc  menu.o [1]
+prevValues              0x200000ac   0x14  Data  Lc  PID.o [1]
+readTempCelcius         0x00003ff1   0x34  Code  Gb  readTemp.o [1]
+rtcCb                   0x200000f4    0x4  Data  Lc  rtc.o [1]
+rtcFreq                 0x200000f8    0x4  Data  Lc  rtc.o [1]
+rtcInitialized          0x20000104    0x1  Data  Lc  rtc.o [1]
+setClearDisplay         0x00003c5b    0x6  Code  Gb  menu.o [1]
+setPoint                0x200000c8    0x4  Data  Lc  PID.o [1]
+setupSWO                0x00002de3   0x8c  Code  Gb  capsense.o [1]
+sizeMenu                0x20000054    0x4  Data  Gb  menu.o [1]
+snprintf                0x00003e41   0x44  Code  Gb  snprintf.o [3]
+strchr                  0x00000de9         Code  Gb  strchr.o [5]
+strlen                  0x00000e21         Code  Gb  strlen.o [5]
+subMenu                 0x00003a7f   0xd2  Code  Gb  menu.o [1]
+targetTemp10            0x200000e8    0x4  Data  Gb  menu.o [1]
+timer_2sec              0x00004e69   0x16  Code  Gb  blink.o [1]
+touch                   0x200000f0    0x4  Data  Lc  menu.o [1]
+
+
+[1] = C:\Users\oz0ne\AppData\Roaming\energymicro\kits\EFM32TG_STK3300\examples\SousVide - Backup\iar\blink\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tl.a
+[5] = rt7M_tl.a
+
+  19 472 bytes of readonly  code memory
+   2 428 bytes of readonly  data memory
+   1 284 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
